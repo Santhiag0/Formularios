@@ -1,0 +1,63 @@
+<!-- Header.astro -->
+
+---
+---
+
+<header>
+  <div class="logo-container">
+    <img
+      src="https://www.uta.edu.ec/v4.0/images/2023ale/logogris.webp"
+      alt="Logo"
+      class="logo"
+    />
+  </div>
+  <div class="buttons-container">
+    <a  class="button text-white align-middle" href="Labs">Inicio</a>
+  </div>
+  <div class="buttons-container">
+    <a  class="button text-white align-middle" href="Reserva">Reservas</a>
+  </div>
+  <div class="search-container">
+    <input
+      type="text"
+      placeholder="Buscar..."
+      class="search-input"
+    />
+    <button class="search-button">Buscar</button>
+  </div>
+</header>
+
+<style>
+  header {
+
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .logo-container img {
+    max-width: 3cm; /* Ancho máximo de la imagen */
+    height: auto;
+  }
+
+  .buttons-container button {
+    color: #fff; /* Texto blanco */
+    padding: 15px 45px; /* Ajusta el padding según tus preferencias */
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px; /* Tamaño de fuente para los botones */
+  }
+
+  .search-input {
+    padding: 8px;
+    border: 1px solid #fff; /* Borde blanco */
+    margin-right: 10px;
+    font-size: 16px; /* Tamaño de fuente para el campo de búsqueda */
+  }
+
+  /* Agrega estilos adicionales según tus necesidades */
+</style>
